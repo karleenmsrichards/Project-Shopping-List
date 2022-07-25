@@ -1,42 +1,20 @@
-<style>
-html {
+
+body {
   font-family: montserrat, cursive;
+}
 h1 {
  text-align: center;
  text-decoration: underline;
  
 }
 #nav-bar {
- padding: 0;
-  margin: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
   background: #3D3D3D;
   height: 60px;
   wifht: 100%;
-  
   }
-nav {
-  float: right;
-  margin-right: 18px;
-  }
-nav ul li {
-  display: inline-block;
-  height: 70px;
-  margin: 0 5px;
-  }
-  nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 6px, 11px;
-    border-radius: 3px;
-  }
-  a.active,a:hover {
-    background: black;
-    transform: 5s;
-  }
-    
+
 #cart-list {
   list-style: number;
 }
@@ -61,4 +39,3 @@ nav ul li {
   }
   
  
-</style>
