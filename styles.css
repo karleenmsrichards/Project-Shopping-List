@@ -2,7 +2,8 @@ body {
     background-color: white;
     background-size: cover;
     max-width: 100%;
-    margin-left: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .topnav {
         background-color: rgb(39, 33, 33);
@@ -22,8 +23,8 @@ body {
 }
 
 .topnav a:hover {
-    background-color:  rgb(27, 10, 124);
-    color: black;
+    background-color:  rgb(58, 36, 187);
+    color: white;
    
 }
 h1 {
@@ -46,13 +47,13 @@ h1 {
 .button {
     border: 4px solid none;
     border-radius: 0.4em;
-    width: 100px;
-    height: 80px;
+    width: 85px;
+    height: 65px;
 }
 
 .button:hover {
-    background-color:  rgb(27, 10, 124);
-    color: black;
+    background-color:  rgb(58, 36, 187);
+    color: white;
 }
 
 
