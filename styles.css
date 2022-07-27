@@ -4,6 +4,8 @@ body {
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px;
+    font-weight: 200;
+    font-size: 17px;
 }
 .topnav {
         background-color: rgb(39, 33, 33);
@@ -19,7 +21,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .topnav a:hover {
@@ -47,7 +49,7 @@ h1 {
 height: 400px;
 }
 #sale-price {
-  font-weight: 600;
+  font-weight: 500;
   color: red;
 
 }
