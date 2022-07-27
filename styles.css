@@ -29,6 +29,9 @@ body {
     color: white;
    
 }
+#search {
+    text-align: right;
+}
 h1 {
     text-align: center;
     text-decoration: underline;
