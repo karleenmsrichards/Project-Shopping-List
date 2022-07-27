@@ -70,14 +70,11 @@
 
 
     <script>
-var shopping_bag, balance;
+var shopping_bag;
 
 
-let element_cart_list = document.getElementById('cart-list');
-element_cart_list.style.backgroundColor = '#333333';
 let element_cart_btn = document.getElementById('cart-btn');
 element_cart_btn.innerText = '👜';
-balance = [];
 shopping_bag = [];
 
 
@@ -102,17 +99,16 @@ document.getElementById('cart-4').addEventListener('click', (event) => {
 });
 
 document.getElementById('cart-btn').addEventListener('click', (event) => {
-  let element_cart_list2 = document.getElementById('cart-list');
+  let element_cart_list = document.getElementById('cart-list');
   while (!!shopping_bag.length) {
     if(--window.LoopTrap <= 0) throw "Infinite loop.";
     let new_li = document.createElement('li');
     new_li.innerText = shopping_bag.shift();
 
-    element_cart_list2.appendChild(new_li);
+    element_cart_list.appendChild(new_li);
   }
 
 });
-
 
  </script>
   </body>
