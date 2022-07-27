@@ -35,10 +35,23 @@ h1 {
 #cart-list {
     list-style: number;
 }
-
-.d-flex {
-    display: flex;
+.container {
+  display: flex;
 }
+.d-block {
+  display: inline-block;
+  margin-right: 50px;
+}
+.img-size {
+  width: 250px;
+height: 400px;
+}
+#sale-price {
+  font-weight: 600;
+  color: red;
+
+}
+
 
 #list {
     list-style: none;
