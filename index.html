@@ -70,9 +70,10 @@
 
 
     <script>
-var shopping_bag;
+var flag, shopping_bag;
 
 
+flag = false;
 let element_cart_btn = document.getElementById('cart-btn');
 element_cart_btn.innerText = '👜';
 shopping_bag = [];
@@ -99,13 +100,21 @@ document.getElementById('cart-4').addEventListener('click', (event) => {
 });
 
 document.getElementById('cart-btn').addEventListener('click', (event) => {
-  let element_cart_list = document.getElementById('cart-list');
-  while (!!shopping_bag.length) {
-    if(--window.LoopTrap <= 0) throw "Infinite loop.";
-    let new_li = document.createElement('li');
-    new_li.innerText = shopping_bag.shift();
+  if (flag == false) {
+    let element_cart_list = document.getElementById('cart-list');
+    while (!!shopping_bag.length) {
+      if(--window.LoopTrap <= 0) throw "Infinite loop.";
+      let new_li = document.createElement('li');
+      new_li.innerText = shopping_bag.shift();
+      new_li.setAttribute("src", true);
 
-    element_cart_list.appendChild(new_li);
+      element_cart_list.appendChild(new_li);
+    }
+    flag = true;
+  } else if (flag == true) {
+    let element_cart_list2 = document.getElementById('cart-list');
+    element_cart_list2.style.visibility = (false) ? 'visible' : 'hidden';
+    flag = false;
   }
 
 });
